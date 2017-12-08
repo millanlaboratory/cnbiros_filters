@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="cnbiros_filters" type="range_to_range_filter_chain" output="screen" name="range_threshold_filter">
+	  <rosparam command="load" file="$(find cnbiros_filters)/launch/range_threshold_filter.yaml" /> 
+  </node>
+</launch>

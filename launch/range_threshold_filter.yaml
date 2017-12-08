@@ -1,0 +1,6 @@
+range_filter_chain:
+- name: range_threshold_filter
+  type: cnbiros/range_filters/RangeThresholdFilter
+  params:
+    upper_threshold: 1.0            # Required
+    lower_threshold: 0.0            # if not specified defaults to 0.0
