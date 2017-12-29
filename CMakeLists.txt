@@ -27,7 +27,7 @@ include_directories(
 )
 
 add_library(cnbiros_filters
-	src/range_filters.cpp
+	src/cnbiros_filters.cpp
 	src/RangeToRangeFilterChain.cpp
 )
 target_link_libraries(cnbiros_filters ${catkin_LIBRARIES})
