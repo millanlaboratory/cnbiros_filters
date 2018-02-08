@@ -6,5 +6,11 @@
         This is a thresholding filter for Sensor Range messages
       </description>
     </class>
+    <class name="cnbiros/range_filters/RangeConsistencyFilter" type="cnbiros::range_filters::RangeConsistencyFilter" 
+            base_class_type="filters::FilterBase<sensor_msgs::Range>">
+      <description>
+        This is a temporal consistency filter for Sensor Range messages
+      </description>
+    </class>
   </library>
 </class_libraries>
