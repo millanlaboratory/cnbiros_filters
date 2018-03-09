@@ -52,7 +52,8 @@ bool RangeThresholdFilter::update(const sensor_msgs::Range& data_in, sensor_msgs
 	if(data_in.range >= this->upper_threshold_) {
 		data_out.range = data_in.max_range;
 	} else if(data_in.range <= this->lower_threshold_) {
-		data_out.range = data_in.min_range;
+		//data_out.range = data_in.min_range;
+		data_out.range = data_in.max_range;
 	} else {
 		data_out.range = data_in.range;
 	}
